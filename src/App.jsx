@@ -1,9 +1,28 @@
-function App() {
+import Header from "./assets/Components/Header";
+import { useState } from "react";
+import DefaultDisplay from "./assets/Components/DefaultDisplay";
+
+export default function App() {
+  const [menuTitle, setMenuTitle] = useState("");
+  function inMenu(title) {
+    setMenuTitle(title);
+  }
   return (
-    <>
-      <h1 className="my-8 text-center text-5xl font-bold">Hello World</h1>
-    </>
+    <div class="area">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <Header changeMenu={inMenu} />
+      {menuTitle == "" && <DefaultDisplay />}
+    </div>
   );
 }
-
-export default App;

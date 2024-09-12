@@ -1,0 +1,12 @@
+{
+  "menu": [
+    {
+      "title": "First Icon",
+      "fa": "faBook"
+    },
+    {
+      "title": "Lightbulb Icon",
+      "fa": "faLightbulb"
+    }
+  ]
+}
