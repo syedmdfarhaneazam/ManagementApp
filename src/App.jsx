@@ -1,6 +1,7 @@
 import Header from "./assets/Components/Header";
 import { useState } from "react";
 import DefaultDisplay from "./assets/Components/DefaultDisplay";
+import SideBar from "./assets/Components/SideBar";
 
 export default function App() {
   const [menuTitle, setMenuTitle] = useState("");
@@ -8,7 +9,7 @@ export default function App() {
     setMenuTitle(title);
   }
   return (
-    <div class="area">
+    <main class="area h-screen">
       <ul class="circles">
         <li></li>
         <li></li>
@@ -21,8 +22,10 @@ export default function App() {
         <li></li>
         <li></li>
       </ul>
-      <Header changeMenu={inMenu} />
-      {menuTitle == "" && <DefaultDisplay />}
-    </div>
+      <div className="flex flex-row">
+        <SideBar />
+        <Header changeMenu={inMenu} />
+      </div>
+    </main>
   );
 }
