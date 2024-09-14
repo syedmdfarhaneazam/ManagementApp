@@ -2,15 +2,17 @@ import Header from "./assets/Components/Header";
 import { useState } from "react";
 import DefaultDisplay from "./assets/Components/DefaultDisplay";
 import SideBar from "./assets/Components/SideBar";
+import NewProject from "./assets/Components/NewProject";
 
 export default function App() {
-  const [menuTitle, setMenuTitle] = useState("");
-  function inMenu(title) {
-    setMenuTitle(title);
-  }
   return (
     <main class="area h-screen">
       <ul class="circles">
+        <Header />
+        <div className="pt-8 flex flex-row">
+          <SideBar />
+          <NewProject />
+        </div>
         <li></li>
         <li></li>
         <li></li>
@@ -22,10 +24,6 @@ export default function App() {
         <li></li>
         <li></li>
       </ul>
-      <div className="flex flex-row">
-        <SideBar />
-        <Header changeMenu={inMenu} />
-      </div>
     </main>
   );
 }
