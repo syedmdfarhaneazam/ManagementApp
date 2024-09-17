@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandPointDown } from "@fortawesome/free-solid-svg-icons";
-export default function Input({ ...props }) {
+import { forwardRef } from "react";
+const input = forwardRef(function Input({ ...props }, ref) {
   return (
     <div className="flex flex-col px-2">
       <p>
@@ -8,7 +9,12 @@ export default function Input({ ...props }) {
           {props.title}-<FontAwesomeIcon icon={faHandPointDown} />
         </lable>
       </p>
-      <input {...props}></input>
+      {props.title == "Description" ? (
+        <textarea ref={ref} {...props} />
+      ) : (
+        <input ref={ref} {...props}></input>
+      )}
     </div>
   );
-}
+});
+export default input;

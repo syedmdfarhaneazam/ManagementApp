@@ -5,13 +5,31 @@ import SideBar from "./assets/Components/SideBar";
 import NewProject from "./assets/Components/NewProject";
 
 export default function App() {
+  const [projectState, setProjectState] = useState({
+    selectedProjectId: null,
+    projects: [],
+  });
+
+  function handleStartProject() {
+    setProjectState((prevState) => {
+      return { ...prevState, selectedProjectId: undefined };
+    });
+  }
+
+  let content;
+  if (projectState.selectedProjectId === null) {
+    content = <DefaultDisplay onStartAddProject={handleStartProject} />;
+  } else if (projectState.selectedProjectId === undefined) {
+    content = <NewProject />;
+  }
+
   return (
-    <main class="area h-screen">
-      <ul class="circles">
+    <main className="area h-screen">
+      <ul className="circles">
         <Header />
         <div className="pt-8 flex flex-row">
-          <SideBar />
-          <NewProject />
+          <SideBar onStartAddProject={handleStartProject} />
+          {content}
         </div>
         <li></li>
         <li></li>
