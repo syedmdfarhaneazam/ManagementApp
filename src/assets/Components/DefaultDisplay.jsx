@@ -9,7 +9,7 @@ export default function DefaultDisplay({ onStartAddProject }) {
         className="hover:bg-black hover:bg-opacity-40 px-2 py-2 font-bold md:text-base  bg-violet-900 text-white rounded-full "
       >
         <FontAwesomeIcon icon={faPlusCircle} />
-        ...ADD
+        ADD
       </button>
 
       <h1 className="font-ubuntu-mono text-center text-white text-2xl md:text-3xl px-4">

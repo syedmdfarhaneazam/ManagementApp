@@ -3,16 +3,20 @@ import { faHandPointDown } from "@fortawesome/free-solid-svg-icons";
 import { forwardRef } from "react";
 const input = forwardRef(function Input({ ...props }, ref) {
   return (
-    <div className="flex flex-col px-2">
-      <p>
-        <lable className="text-white">
+    <div className=" font-serif flex flex-col px-2">
+      <p className="text-center">
+        <lable className=" text-white">
           {props.title}-<FontAwesomeIcon icon={faHandPointDown} />
         </lable>
       </p>
       {props.title == "Description" ? (
-        <textarea ref={ref} {...props} />
+        <textarea
+          className=" mt-5 bg-black text-white rounded-xl font-ubuntu-mono"
+          ref={ref}
+          {...props}
+        />
       ) : (
-        <input ref={ref} {...props}></input>
+        <input className="font-bold" ref={ref} {...props}></input>
       )}
     </div>
   );

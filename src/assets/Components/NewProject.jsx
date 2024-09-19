@@ -53,16 +53,18 @@ export default function NewProject({ onAdd, onCancel }) {
             Cancel
           </button>
         </menu>
-        <div className="flex flex-row space-x-10">
+        <div className="flex mt-5 flex-row space-x-10">
           <Input ref={title} title="PROJECT NAME" type="text" name="name" />
           <Input ref={date} title="Date" type="date" name="date" />
         </div>
-        <Input
-          ref={description}
-          title="Description"
-          type="text"
-          name="description"
-        />
+        <p className="mt-10">
+          <Input
+            ref={description}
+            title="Description"
+            type="text"
+            name="description"
+          />
+        </p>
       </div>
     </>
   );
