@@ -2,8 +2,7 @@
 
 A demo front-end web application for project management and tracking workflow. This is a simple front-end project that you can copy, modify, and make it yours. ✨🎉
 
-![ManagementApp Demo]
-https://github.com/user-attachments/assets/3aab6498-250c-49aa-a49f-1c94b8e81c6c
+(https://github.com/user-attachments/assets/3aab6498-250c-49aa-a49f-1c94b8e81c6c)
 
 ---
 
