@@ -20,14 +20,14 @@ https://github.com/user-attachments/assets/3aab6498-250c-49aa-a49f-1c94b8e81c6c
 
 ## 🛠️ **Make It Yours**
 
-- Clone the repository and follow these simple commands to get started:
+- 1. Clone the repository and follow these simple commands to get started:
 ```bash
 $ git clone https://github.com/syedmdfarhaneazam/ManagementApp
 ```
--Install dependencies
+- 2. Install dependencies
 ```bash
 $ npm install
 ```
--Run the development server
+- 3. Run the development server
 ```bash
 $ npm run dev
