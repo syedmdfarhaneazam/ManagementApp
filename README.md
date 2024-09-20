@@ -1,6 +1,6 @@
 ## 🎇 MANAGEMENT APPLICATION 🎇
 
-A demo front-end web application for project management and tracking workflow. This is a simple front-end project that you can copy, modify, and make it yours. ✨🎉
+A demo front-end web application for project management and tracking workflow. This is a simple front-end project that you can copy, modify, and make it yours. Also consider contributing to make it more functional and  add other features that you think is good for this project . ✨🎉
 
 https://github.com/user-attachments/assets/3aab6498-250c-49aa-a49f-1c94b8e81c6c
 
@@ -20,11 +20,14 @@ https://github.com/user-attachments/assets/3aab6498-250c-49aa-a49f-1c94b8e81c6c
 
 ## 🛠️ **Make It Yours**
 
-Clone the repository and follow these simple commands to get started:
-
+- Clone the repository and follow these simple commands to get started:
 ```bash
+$ git clone https://github.com/syedmdfarhaneazam/ManagementApp
+```
 -Install dependencies
-`npm install`
-
+```bash
+$ npm install
+```
 -Run the development server
-`npm run dev`
+```bash
+$ npm run dev
